@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Calculadora Recodejr</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>
+            <p>Calculadora RecodeJr</p>
+        </div>
+        <div id="calculator">
+            <div class="contentResults">
+               <p id="numbersResult" style="margin: 10px;">0</p>
+            </div>
+            <div id="digits">
+                <h3 id="erro"></h3>
+                <div class="rowClean">
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+                <div class="rowDigits">
+                    <button class="buttonCalc" onclick="addNum(this)">7</button>
+                    <button class="buttonCalc" onclick="addNum(this)">8</button>
+                    <button class="buttonCalc" onclick="addNum(this)">9</button>
+                    <button class="buttonCalc" onclick="addSinal(this)">/</button>
+                </div>
+                <div class="rowDigits">
+                    <button class="buttonCalc" onclick="addNum(this)">4</button>
+                    <button class="buttonCalc" onclick="addNum(this)">5</button>
+                    <button class="buttonCalc" onclick="addNum(this)">6</button>
+                    <button class="buttonCalc" onclick="addSinal(this)">*</button>
+                </div>
+                <div class="rowDigits">
+                    <button class="buttonCalc" onclick="addNum(this)">1</button>
+                    <button class="buttonCalc" onclick="addNum(this)">2</button>
+                    <button class="buttonCalc" onclick="addNum(this)">3</button>
+                    <button class="buttonCalc" onclick="addSinal(this)">-</button>
+                </div>
+                <div class="rowDigits">
+                    <button class="buttonCalc" onclick="addNum(this)">0</button>
+                    <button class="buttonCalc" onclick="addNum(this)">.</button>
+                    <button class="buttonCalc" onclick="calcular()">=</button>
+                    <button class="buttonCalc" onclick="addSinal(this)">+</button>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
